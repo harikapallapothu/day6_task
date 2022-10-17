@@ -141,9 +141,61 @@ Fix the code to reverse.
 
 Fix the code to remove duplicates.
 
+var res = function(arr){
+    newArr = [];
+    for(var i=0; i < arr.length; i++){
+    
+    if(newArr.indexOf(arr[i]) == -1) {
+    newArr.push(arr[i]);
+    } }
+    console.log(newArr)
+   }
+   res(["guvi",'geek','guvi','duplicate','geek'])
+   
+----------------------------------------------------------------------------
 
+Fix the code to give the below output:
 
+Expected Output:
 
+[
+{firstName: “Vasanth”, lastName: “Raja”, age: 24, role: “JSWizard”},
+{firstName: “Sri”, lastName: “Devi”, age: 28, role: “Coder”}
+]
+var array =[{firstname:'vasanth',lastname:"Raje",age:'24',role:"JSWizard"},{firstname:"Sri",lastname:"Devi",age:"28",role: "Coder"}];
+for(i=0;i<array.length;i++){
+    console.log(array[i])
+}
+
+---------------------------------------------------------------------------------
+
+Fix the code to give the below output:
+
+var as=[12,34,5,6,2,56,6,2,1];
+var s=as.filter(Element=>Element%2!=0).reduce((a,c)=>a+c,0)
+console.log(s);
+
+---------------------------------------------------------------------------------
+Fix the code to give the below output:
+
+Swap the odd and even digits
+aa = data=>{
+    var a=data;var l="";
+   for(i=0;i<a.length;i+=2){
+    
+    var s=a[i+1]
+    var b=a[i]
+    l+=s
+    l+=b
+    
+   }
+   if((a.length%2)!=0){
+    l+=a[a.length-1]
+   }
+   console.log(l);
+   }
+   aa("1234");
+   
 
 
 
